@@ -27,3 +27,6 @@ data/films.local.json
 # Aprender models stash — never check in *.apr binaries.
 *.apr
 models/
+
+# pmat corpus fetched by examples/01-wow.sh
+/corpus/

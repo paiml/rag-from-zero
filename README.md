@@ -24,7 +24,7 @@ This workspace contains two demos that anchor Module 1's lessons. Both run again
 cargo run -p vec-cli --example aprender_film_search
 ```
 
-Boots a [`trueno_rag::RagPipeline`](https://crates.io/crates/aprender-rag) with `RecursiveChunker(512, 50)` + `MockEmbedder(384)` + `NoOpReranker` + `RRF{k=60}`, indexes every film, queries `"a romantic comedy"`, prints top-5 JSON, asserts four runtime contracts:
+Boots a [`aprender_rag::RagPipeline`](https://crates.io/crates/aprender-rag) with `RecursiveChunker(512, 50)` + `MockEmbedder(384)` + `NoOpReranker` + `RRF{k=60}`, indexes every film, queries `"a romantic comedy"`, prints top-5 JSON, asserts four runtime contracts:
 
 * `hits.len() == 5` — top-k honoured
 * `hits[0].score >= 0.0` — non-negative top score
